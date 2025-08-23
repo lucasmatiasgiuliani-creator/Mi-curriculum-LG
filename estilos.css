@@ -1,0 +1,35 @@
+/* CSS DOCUMENT */
+@charset "UTF-8"; 
+@font-face {
+    font-family: "Archivo Regular";
+    src: url(fuentes/Archivo-Regular.ttf) format(ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Archivo Bold";
+    src: url(fuentes/Archivo-Bold.ttf) format(ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Archivo Italic";
+    src: url(fuentes/Archivo-Italic.ttf) format(ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Archivo Light";
+    src: url(fuentes/Archivo-Light.ttf) format(ttf);
+    font-weight: lighter;
+    font-style: normal;
+}
+h1 {
+    font-family: 'Archive', Arial, Helvetica, sans-serif;
+}
+
+h2 { font-family: 'Archive', Arial, Helvetica, sans-serif;
+}
+
+h3{ font-family: 'Archive', Arial, Helvetica, sans-serif;
+}
