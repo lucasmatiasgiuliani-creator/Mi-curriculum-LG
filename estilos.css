@@ -24,8 +24,17 @@
     font-weight: lighter;
     font-style: normal;
 }
+
+*{
+font-family: "Archivo Regular", sans-serif;
+}
+
+body {
+
+}
+
 h1 {
-    font-family: 'Archive', Arial, Helvetica, sans-serif;
+    font-family: 'Archive', Arial, Helvetica, sans-serif; 
 }
 
 h2 { font-family: 'Archive', Arial, Helvetica, sans-serif;
