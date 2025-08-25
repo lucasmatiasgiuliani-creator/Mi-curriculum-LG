@@ -27,18 +27,35 @@
 
 *{
 font-family: "Archivo Regular", sans-serif;
+background-color: lightgray;
+list-style: none;
 }
 
-body {
+/*aca empiezan las aplicaciones*/
 
+h1, h2, h3 {
+    font-family: "Archivo Regular" sans-serif;
+    color: blue;
+    text-align: center;
 }
 
 h1 {
-    font-family: 'Archive', Arial, Helvetica, sans-serif; 
+    font-size: 3rem;
+    line-height: 2rem; 
 }
 
-h2 { font-family: 'Archive', Arial, Helvetica, sans-serif;
+h2{
+    font-size: 2rem;
+    line-height: 1rem;
 }
 
-h3{ font-family: 'Archive', Arial, Helvetica, sans-serif;
+h3{
+    font-size: 2rem;
+    line-height: 1rem;
 }
+
+p{
+    text-wrap-style: balance;
+    text-align: center;
+}
+
