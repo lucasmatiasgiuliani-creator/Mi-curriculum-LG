@@ -36,26 +36,37 @@ list-style: none;
 h1, h2, h3 {
     font-family: "Archivo Regular" sans-serif;
     color: blue;
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
     font-size: 3rem;
-    line-height: 2rem; 
+    line-height: 3rem; 
 }
 
 h2{
     font-size: 2rem;
-    line-height: 1rem;
+    line-height: 2rem;
 }
 
 h3{
     font-size: 2rem;
-    line-height: 1rem;
+    line-height: 2rem;
 }
+
+/* como esta ordenado el texto*/
 
 p{
     text-wrap-style: balance;
+    text-align: left;
+    background-image: url(imagenes/fondo.jpg);
+    background-size: contain;
+}
+
+nav{
     text-align: center;
 }
 
+ul{
+    text-align: center;
+}
