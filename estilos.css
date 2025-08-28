@@ -27,10 +27,14 @@
 
 *{
 font-family: "Archivo Regular", sans-serif;
-background-color: lightgray;
+
 list-style: none;
 margin: 0;
 padding: 0;
+}
+
+body{
+    background-color: lightgray;
 }
 
 /*aca empiezan las aplicaciones*/
@@ -62,7 +66,7 @@ h3{
 p{
     text-wrap-style: balance;
     text-align: left;
-    background-image: url(imagenes/fondo.jpg);
+    background-color: rgb(172, 172, 172);
     background-size: contain;
     padding: 20px;
     margin: 20px;
@@ -70,7 +74,7 @@ p{
 
 nav{
     text-align: center;
-    background-image: url(imagenes/fondo.azul.jpg);
+    background-color: blue;
     background-size: contain;
     font-size: 1.5rem;
     margin: 20px;
@@ -82,6 +86,15 @@ ul{
 
 a{
     text-decoration: none;
-    color: black;
+color: white;
     margin: 60px;
+}
+
+footer{
+    background-image: url(imagenes/fondo.estrella.png);
+    background-position: center;
+}
+
+header{
+    margin: 20px;
 }
