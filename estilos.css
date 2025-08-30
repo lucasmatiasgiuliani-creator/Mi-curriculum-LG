@@ -26,29 +26,28 @@
 }
 
 *{
-font-family: "Archivo Regular", sans-serif;
-
-list-style: none;
-margin: 0;
-padding: 0;
+    font-family: "Archivo Regular", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: lightgray;
 }
 
-/*aca empiezan las aplicaciones*/
-
-h1, h2, h3 {
-    font-family: "Archivo Regular" sans-serif;
+/*----TITULOS----*/
+h1, h2, h3{
+    font-family: "Archivo Regular", sans-serif;
     color: blue;
     text-align: left;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
     font-size: 3rem;
-    line-height: 3rem; 
+    line-height: 2rem;
 }
 
 h2{
@@ -61,40 +60,127 @@ h3{
     line-height: 2rem;
 }
 
-/* como esta ordenado el texto*/
-
+/*----PÁRRAFOS----*/
 p{
-    text-wrap-style: balance;
+
     text-align: left;
     background-color: rgb(172, 172, 172);
-    background-size: contain;
-    padding: 20px;
-    margin: 20px;
+    padding: 15px;
+    margin: 10px 0;
 }
 
+/*----NAV----*/
 nav{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: blue;
-    background-size: contain;
-    font-size: 1.5rem;
-    margin: 20px;
+    padding: 10px;
+    gap: 30px;
 }
 
-ul{
-    text-align: center;
-}
-
-a{
+nav a{
     text-decoration: none;
-color: white;
-    margin: 60px;
+    color: white;
+    font-size: 1.2rem;
 }
 
+/*----HEADER FOTO + TEXTO----*/
+.presentacion{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.foto-perfil{
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*----DOS COLUMNAS (forma trabajo + mensaje)----*/
+.dos-columnas{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.dos-columnas section{
+    flex: 1;
+}
+
+/*----HABILIDADES----*/
+#habilidades{
+    padding: 20px;
+}
+
+.grid-habilidades{
+    display: flex;
+    gap: 40px;
+}
+
+.grid-habilidades div{
+    flex: 1;
+}
+
+.grid-habilidades ul li{
+    background: #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+/*----FOOTER----*/
 footer{
     background-image: url(imagenes/fondo.estrella.png);
     background-position: center;
+    padding: 20px;
+    text-align: center;
 }
 
-header{
-    margin: 20px;
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*----REDES SOCIALES----*/
+#Redes{
+    background-color: blue;
+    background: none;
+    margin-bottom: 30px;
+}
+
+#Redes p{
+    color: white;
+    background-color: blue;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#Redes a{
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/*----RESPONSIVE----*/
+@media (max-width: 768px){
+    .presentacion {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
+.dos-columnas{
+    flex-direction: column;
+}
+.grid-habilidades{
+    flex-direction: column;
+}
 }

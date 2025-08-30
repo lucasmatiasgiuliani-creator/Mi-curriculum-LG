@@ -2,70 +2,89 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>TP de Giuliani</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+    <!--NAV ARRIBA DE TODO-->
+    <nav>
+    <a href=>Inicio</a>
+    <a href=>Datos Personales</a>
+    <a href=>Trabajos Realizados</a>
+    <a href=>Trabajos Destacados</a>
+    </nav>
+
     <header>
-        <img src="imagenes/mi-foto.jpg" alt="foto propia" width="300" height="312" />
-        <nav>
-            <a href="">inicio</a>
-            <a href="">datos personales</a>
-            <a href="">trabajos realizados</a>
-            <a href="">trabajos destacados</a>
-        </nav>
+        <div class="Presentacion">
+            <img src="imagenes/mi-foto.jpg" alt="foto propia" class="foto-perfil"/>
+            <section id="yo">
+                <h1>¿Quien es Lucas Giuliani</h1>
+                <p>Mi nombre es Lucas Matías Giuliani, naci el 14 de abril de 2004. Actualmente curso la Licenciatura en Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Paralelamente, trabajo en un Grow Shop y en la tienda de mascotas Puppys, además de realizar proyectos independientes vinculados a la gestión de redes sociales, como la creación de reels, diseño de feeds y producción fotográfica. El diseño es mi principal pasión, un campo en el que busco desarrollarme de manera integral. Mi objetivo es dejar una huella significativa en la historia del diseño, aportando creatividad, innovación y compromiso en cada proyecto.</p>
+            </section>
+        </div>
     </header>
-    <!--info personal--> 
+
     <main>
-        <section id="yo">
-            <h1>¿Quien es Lucas Giuliani?</h1>
-            <p>Mi nombre es Lucas Matías Giuliani (14 de abril de 2004). Actualmente curso la Licenciatura en Diseño y
-                Comunicación Visual en la Universidad Nacional de Lanús. Paralelamente, trabajo en un Grow Shop y en la
-                tienda de mascotas Puppys, además de realizar proyectos independientes vinculados a la gestión de redes
-                sociales, como la creación de reels, diseño de feeds y producción fotográfica. El diseño es mi principal
-                pasión, un campo en el que busco desarrollarme de manera integral. Mi objetivo es dejar una huella
-                significativa en la historia del diseño, aportando creatividad, innovación y compromiso en cada
-                proyecto.</p>
-            <h2>Mi forma de trabajo</h2>
-            <p>En mi forma de trabajar dentro del diseño, me caracterizo por la curiosidad y la búsqueda constante de
-                aprendizaje. Considero fundamental salir de la zona de confort y explorar nuevas áreas, herramientas y
-                técnicas que me permitan enriquecer mi mirada y ampliar mis recursos creativos. Me gusta abordar cada
-                proyecto con una actitud experimental, probando diferentes enfoques hasta encontrar soluciones visuales
-                que no solo sean funcionales, sino también innovadoras y originales. Esta apertura me ha llevado a
-                adquirir experiencia en distintos formatos, desde diseño gráfico aplicado a redes sociales hasta la
-                fotografía y la comunicación visual en contextos comerciales. Entiendo el diseño como un proceso en
-                permanente evolución, y por eso mi meta es seguir perfeccionando mis habilidades, adaptándome a los
-                cambios y aportando siempre un valor diferencial en cada propuesta.</p>
-        </section>
-        <section id="Mi mensaje">
-            <h3>¿Que quiero demostrar?</h3>
-            <p>A través del diseño busco comunicar ideas que generen impacto y conecten de manera auténtica con las
-                personas. Para mí, el diseño no es solo una herramienta estética, sino un medio para transmitir mensajes
-                claros, emocionales y significativos, capaces de transformar la percepción y generar experiencias
-                memorables. Quiero demostrar que el diseño puede ser versátil y funcional, pero al mismo tiempo creativo
-                y expresivo, reflejando tanto la identidad de una marca como la sensibilidad de quien lo crea. Mi
-                objetivo es que cada proyecto cuente una historia propia y logre dejar una huella, ya sea en lo visual,
-                en lo emocional o en lo cultural.</p>
+        <!--Dos columnas: forma de trabajo + mensaje-->
+        <div class="dos-columnas">
+            <section id="forma-trabajo">
+                <h2>Mi forma de trabajo</h2>
+                <p>En mi forma de trabajar dentro del diseño, me caracterizo por la curiosidad y la busqueda constante de aprendisaje. Considero fundamental salir de la zaona de confort y explorar nuevas áreas, herramientas y técnicas que me permitan enriquecer mi mirada y ampliar mis recursos creativos. Me gusta abordar cada proyecto con una actitud experimental, probando diferentes enfoques hasta encontrar soluciones visuales que no solo sean funcionales, sino también innovadoras y originales.</p>
+            </section>
+
+            <section id="mensaje">
+                <h3>¿Que quiero demostrar?</h3>
+                <p>A través del diseño busco comunicar ideas que generen impacto y conecten de manera auténtica con las personas. Para mí, el diseño no es solo una herramienta estética, sino un medio para trasmitir mensajes claros, emocionales y significativos, capaces de transformar la percepción y generar experiencias memoriables.</p>
+            </section>
+        </div>
+        <!--Habilidades en dos columnas-->
+        <section id="habilidaes">
+            <h2>Habilidades</h2>
+            <div class="grid-habilidades">
+                <div>
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Ilustrator</li>
+                        <li>Adobe InDesing</li>
+                        <li>Viaual Studio</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>After Effects</li>
+                        <li>Figma</li>
+                        <li>CapCut</li>
+                        <li>Fotografía</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
-    <!--Redes sociales-->
-    <section id="Redes">
+
+    <!--Redes Sociales-->
     <footer>
+        <section id="Redes">
         <p>Mis redes sociales</p>
         <ul>
-            <li> 
-                <a href="https://www.instagram.com/lucasgiuliarg?igsh=bDAwNnppa2dvZHB0">Instagram</a></li>
-                <img src="imagenes/instagram-logo.jpg" alt="logo de instagram" width="100" height="100"/> 
             <li>
-                <a href="https://www.behance.net/lucasmgiulian">Behance</a></li>
-                <img src="imagenes/behance-logo.jpg" alt="logo de behance" width="100" height="100"/>
+                <a href="https://www.instagram.com/lucasgiuliarg?igsh=bDAwNnppa2dvZHB0">Instagram</a>
+                <img src="imagenes/instagram-logo.jpg" alt="logo de instagram" width="50"/>
+            </li>
+
             <li>
-                <a href="https://www.linkedin.com/in/lucas-mat%C3%ADas-giuliani-8b79562a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin></a></li>
-                <img src="imagenes/linkedin-logo.jpg" alt="logo de behance" width="100" height="100"/> 
+                <a href="https://www.behance.net/lucasmgiulian">Behance</a>
+                <img src="imagenes/behance-logo.jpg" alt="Behance" width="50"/>
+            </li>
+
+            <li>
+                <a href="https://www.linkedin.com/in/lucas-mat%C3%ADas-giuliani-8b79562a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+                <img src="imagenes/linkedin-logo.jpg" alt="Linkedin" width="50"/>
+            </li>
         </ul>
-        </section>
+
     </footer>
+    </section>
 </body>
 </html>
