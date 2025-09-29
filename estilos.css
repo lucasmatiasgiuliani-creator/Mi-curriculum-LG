@@ -1,1 +1,153 @@
 /* CSS DOCUMENT */
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Unbounded, sans-serif;
+    color: white;
+    background-color: blue;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: #001489;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+}
+
+.contacto {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.perfil {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* SOBRE MI */
+.sobre-mi {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #001489;
+}
+
+.sobre-mi h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ESPECIALIDADES */
+.especialidades {
+    padding: 2rem;
+    text-align: center;
+}
+
+.especialidades h2 {
+    margin-bottom: 1rem;
+}
+
+.especialidades ul {
+    list-style: none;
+}
+
+.especialidades li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.especialidades li span {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    background: black;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+}
+
+/* HABILIDADES */
+.habilidades {
+    padding: 2rem;
+    background: #001489;
+    text-align: center;
+}
+
+.habilidades ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.habilidades li {
+    background: black;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+/* TRABAJOS */
+.trabajos {
+    padding: 3rem 2rem;
+}
+
+.trabajos h2 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.proyecto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.proyecto img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.proyecto .texto {
+    flex: 1;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #001489;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.redes {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.redes img {
+    width: 40px;
+}
