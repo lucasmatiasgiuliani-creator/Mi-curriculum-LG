@@ -1,6 +1,5 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
-
 *{
     margin: 0;
     padding: 0;
@@ -8,63 +7,65 @@
 }
 
 body{
-    font-family: Unbounded, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-color: blue;
+    background: linear-gradient(to bottom, #001489, #000);
     line-height: 1.6;
 }
 
 /* HEADER */
-.header {
+.heder{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
     background: #001489;
+    flex-wrap: wrap;
 }
 
-.header-text h1 {
+.heder-text h1{
     font-size: 3rem;
 }
 
-.contacto {
+.contacto{
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
 
-.perfil {
+.perfil{
     width: 200px;
     height: auto;
     border-radius: 10px;
+    margin-top: 1rem;
 }
 
 /* SOBRE MI */
-.sobre-mi {
+.sobre-mi{
     padding: 3rem 2rem;
     text-align: center;
     background: #001489;
 }
 
-.sobre-mi h2 {
-    font-size: 2.5rem;
+.sobre-mi h2{
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 /* ESPECIALIDADES */
-.especialidades {
+.especialidades{
     padding: 2rem;
     text-align: center;
 }
 
-.especialidades h2 {
+.especialidades h2{
     margin-bottom: 1rem;
 }
 
-.especialidades ul {
+.especialidades ul{
     list-style: none;
 }
 
-.especialidades li {
+.especialidades li{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +73,7 @@ body{
     font-size: 1.2rem;
 }
 
-.especialidades li span {
+.especialidades li span{
     font-weight: bold;
     margin-right: 0.5rem;
     background: black;
@@ -82,13 +83,13 @@ body{
 }
 
 /* HABILIDADES */
-.habilidades {
+.habilidades{
     padding: 2rem;
     background: #001489;
     text-align: center;
 }
 
-.habilidades ul {
+.habilidades ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -96,58 +97,102 @@ body{
     gap: 1rem;
 }
 
-.habilidades li {
-    background: black;
+.habilidades li{
     padding: 0.5rem 1rem;
     border-radius: 8px;
+    background: black
 }
 
 /* TRABAJOS */
-.trabajos {
+.trabajos{
     padding: 3rem 2rem;
 }
 
-.trabajos h2 {
+.trabajos h2{
     text-align: center;
     margin: 2rem;
 }
 
-.proyecto {
+.proyecto{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
-.proyecto img {
-    width: 300px;
+.proyecto img{
+    width: 100%;
+    max-width: 300px;
     border-radius: 8px;
 }
 
-.proyecto .texto {
+.proyecto .texto{
     flex: 1;
 }
 
 /* FOOTER */
-.footer {
+.footer{
     text-align: center;
     padding: 3rem 2rem;
     background: #001489;
 }
 
-.footer h2 {
+.footer h2{
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-.redes {
+.redes{
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
-.redes img {
+.redes img{
     width: 40px;
+}
+
+/* ADAPTABILIDAD FORMATOS */
+@media (max-width:768px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+   .header-text h1{
+        font-size: 2rem;
+    }
+    .sobre-mi h2,
+    .especialidades h2,
+    .habilidades h2,
+    .footer h2{
+        font-size: 2rem;
+    }
+    .proyecto{
+        flex-direction: column;
+        text-align: center;
+    }
+    .proyecto img{
+        max-width: 90%;
+    }
+} 
+
+@media (max-width: 480px){
+    body{
+    font-size: 0.9rem;
+}
+.header-text h1{
+    font-size: 1.5rem;
+}
+.perfil{
+    width: 150px;
+}
+.habilidades ul{
+    gap: 0.5rem;
+}
+.habilidades li{
+    font-size: 0.8rem;
+}
 }
