@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!--HEADER-->
+<header class="header">
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contactame</a></li>
+            <li><a href="galeria.html">Más trabajos</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro">
+        <h1>¿QUÉ TENES EN MENTE?</h1>
+    </div>
+
+    <!--FORMULARIOS-->
+    <main>
+<h1>¿Cual es tu idea?</h1>
+<form method="post" action="mailton:lucasmatiasgiuliani@gmail.com?subjet='Email enviado desde el formulario'" target="_blank" enctype="text/plain">
+    
+    <label for="Nombre">Nombre:</label>
+    <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre completo">
+
+    <label for="Email">Email:</label>
+    <input type="Email" name="Email" id="Email" placeholder="Correo electronico" required>
+
+    <label for="Edad">Edad:</label>
+    <input type="number" min="18" max="100" name="Edad" id="Edad" required>
+
+    <label for="¿Cuando se entrega?">¿Cuando se entrega?:</label>
+    <input type="date" name="Entrega" id="Entrega" required>
+
+    <p>Tipo de proyecto:</p>
+    <label for="proyecto">Branding<input type="radio" name="proyecto" value="Branding" id="Branding"></label>
+    <label>Ilustración<input type="radio" name="proyecto" value="Ilustración" id="Ilustración"></label>
+    <label>Fotografía<input type="radio" name="proyecto" value="Fotografía" id="Fotografía"></label>
+    <label>Diseño web<input type="radio" name="proyecto" value="Diseño web" id="Diseño web"></label>
+
+    <label for="Telefono">Telefono:</label>
+    <input type="tel" name="Telefono" id="Telefono" placeholder="cód. área" required> 
+
+    <label for="Mensaje">Mensaje</label>
+    <textarea name="Mensaje" id="Mensaje"></textarea>
+
+    
+    <input type="submit">
+    
+</form>
+    </main>
+
+    <!--CONTACTO-->
+    <footer id="contacto" class="contacto">
+    <h2>CONTACTAME</h2>
+    <p>TRABAJEMOS JUNTOS</p>
+    <div class="redes">
+
+        <a href="https://www.behance.net/lucasmgiulian" target="_blank" aria-label="Behance">
+            <img src="imagenes/behance_b.png" alt="Behance">
+        </a>
+
+        <a href="https://www.instagram.com/lucasgiuliarg?igsh=bDAwNnppa2dvZHB0" target="_blank" aria-label="Instagram">
+            <img src="imagenes/instagram_b 1.png" alt="Instagram">
+        </a>
+
+        <a href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank" aria-label="Email">
+            <img src="imagenes/mail_b.png" alt="Email">
+        </a>
+
+        <a href="https://www.linkedin.com/in/lucas-mat%C3%ADas-giuliani-8b79562a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="Likedin">
+            <img src="imagenes/linkedin_b.png" alt="Linkedin">
+        </a>
+    </div>
+</footer>
+    
+</body>
+</html>
