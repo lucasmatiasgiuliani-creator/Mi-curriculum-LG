@@ -1,2 +1,215 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&display=swap');
+
+/*CONFIGURACIÓN GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Unbounded", sans-serif;
+    color: #fff;
+    background: linear-gradient(to bottom, #1A00FF, #000000) ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*ENLACES*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*HEADER GENERAL*/
+.header{
+    width: 100%;
+    background: #77FF00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a{
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3 ease;
+}
+
+nav a:hover{
+    opacity: 0.6;
+}
+
+/*SECCIÓN PRESENTACIÓN*/
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    gap: 1.5rem;
+}
+
+.intro h1{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 14rem;
+}
+
+.intro h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.intro p{
+    max-width: 600px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/*--INICIO--*/
+main{
+    flex: 1;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/*Presentación*/
+.presentacion .intro h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.presentacion h2{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.especialidades ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.especialidades li{
+    font-size: 1.3rem;
+}
+
+.especialidades span{
+    color: #77FF00;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+/*HABILIDADES*/
+.habilidades{
+    margin-top: 4rem;
+}
+
+.habilidades h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.habilidades ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/*Trabajos Destacados*/
+.trabajos{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.trabajos h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.trabajos p{
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.proyecto{
+    margin: 3rem auto;
+    max-width: 800px;
+}
+
+.proyecto h3{ 
+    color: #77FF00;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto p{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.proyecto img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/*GALERIA*/
+.galeria-trabajos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.galeria-trabajos .fila{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.galeria-trabajos img{
+    width: 220px;
+    border-radius: 8px;
+    transition:transform 0.3s ease;  
+}
+
+.galeria-trabajos img:hover{
+    transform: scale(1.05);
+}
+
+.texto-final{
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    opacity: 0.9;
+}
+
+/*COTACTO*/
