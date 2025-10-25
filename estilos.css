@@ -16,6 +16,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 /*ENLACES*/
@@ -37,24 +38,33 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem;
+    position: sticky;
+    top: 0px;
 }
 
 .nav ul{
     list-style: none;
     display: flex;
-    gap: 2rem;
+    justify-content: space-around;
+    gap: 227px;
 }
 
 .nav a{
     color: #000000;
     font-weight: 600;
     text-decoration: none;
-    transition: 0.3 ease;
+    transition: 0.3s;
 }
 
 nav a:hover{
     opacity: 0.6;
+}
+
+/*--INDEX DE INICIO--*/
+main{
+    flex: 1;
+    padding: 6rem 16rem;
 }
 
 /*SECCIÓN PRESENTACIÓN*/
@@ -63,153 +73,94 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3rem;
+    padding: 2rem;
     gap: 1.5rem;
 }
 
 .intro h1{
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 14rem;
+    font-size: 5rem;
+    line-height: 1.3;
+    margin-block-end: 12rem;
 }
 
-.intro h2{
-    font-size: 1.5rem;
-    font-weight: 400;
-    opacity: 0.8;
-}
-
-.intro p{
-    max-width: 600px;
-    line-height: 1.5;
-    font-size: 0.9rem;
-    opacity: 0.9;
-}
-
-/*--INICIO--*/
-main{
-    flex: 1;
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-/*Presentación*/
-.presentacion .intro h1{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.presentacion h2{
+.intro .subtitulo{
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
-.especialidades ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.especialidades li{
-    font-size: 1.3rem;
-}
-
-.especialidades span{
-    color: #77FF00;
+.intro .apellido{
+    font-size: 8rem;
+    margin: -8px;
     font-weight: 700;
-    margin-right: 0.5rem;
 }
 
-/*HABILIDADES*/
-.habilidades{
-    margin-top: 4rem;
+.intro .nombre{
+    font-size: 1.2rem;
+    color: white;
 }
 
-.habilidades h2{
-    font-size: 2rem;
+.roles{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 1.5rem;
+    margin-block-end: 20rem;
+}
+
+/*--ANIMACION PARA ROLES--*/
+.roles span{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease forwards;
+}
+
+.roles span:nth-child(1){animation-delay: 0.4s;}
+.roles span:nth-child(2){animation-delay: 0.8s;}
+.roles span:nth-child(3){animation-delay: 1.2s;}
+.roles span:nth-child(4){animation-delay: 1.6s;}
+
+@keyframes aparecer{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*--SOBRE MI--*/
+.sobre.mi{
+    background-color: #000000;
+    color: #fff;
+    padding: 80px 10%;
+    text-align: left;
+}
+
+.sobre.mi h3{
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.habilidades ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    font-size: 1.1rem;
-}
-
-/*Trabajos Destacados*/
-.trabajos{
-    margin-top: 4rem;
-    text-align: center;
-}
-
-.trabajos h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.trabajos p{
-    max-width: 900px;
-    margin: 0 auto 2rem auto;
-    line-height: 1.6;
-}
-
-.proyecto{
-    margin: 3rem auto;
-    max-width: 800px;
-}
-
-.proyecto h3{ 
-    color: #77FF00;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.proyecto p{
-    text-align: justify;
-    margin-bottom: 1rem;
-}
-
-.proyecto img{
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-/*GALERIA*/
-.galeria-trabajos{
+.texto-sobre.mi{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 3rem;
+    align-items: flex-start;
+    gap: 1.5rem;
 }
 
-.galeria-trabajos .fila{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+.texto-sobre.mi p{
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 0.9rem;
 }
 
-.galeria-trabajos img{
-    width: 220px;
-    border-radius: 8px;
-    transition:transform 0.3s ease;  
+.texto-sobre.mi img{
+    width: 250px;
+    border-radius: 10px;
 }
 
-.galeria-trabajos img:hover{
-    transform: scale(1.05);
+.mano img{
+    width: 60px;
+    margin-top: 20px;
+    margin-block-end: 12rem;
 }
-
-.texto-final{
-    font-size: 1.2rem;
-    margin-top: 3rem;
-    opacity: 0.9;
-}
-
-/*COTACTO*/
