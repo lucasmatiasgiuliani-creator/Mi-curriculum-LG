@@ -528,3 +528,10 @@ label{
 	height: 100vh;
 	z-index: 0;
 }
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
