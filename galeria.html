@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>galeria</title>
     <link rel="stylesheet" href="estilos.css">
+
+    <script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+
+	</script>
 </head>
 
 <body>
@@ -27,57 +40,57 @@
      </div>
 
      <section id="miniaturas">
-        <a href="#afiche-pelicula"><img src="imagenes/afiche-pelicula.jpg" width="200px" height="200px" alt="Perro que no calla"></a>
-        <a href="afiche-urge"><img src="imagenes/afiche-urge.jpg" width="200px height200px" alt="Urge"></a>
-        <a href="#obey"><img src="imagenes/obey.jpg" width="200px" height="200px" alt="obey"></a>
-        <a href="#mano"><img src="imagenes/mano.jpg" width="200px" height="200px" alt="afiche social mano"></a>
-        <a href="#bad-bunny"><img src="imagenes/bad-bunny.jpg" width="200px" height="200px" alt="bad bunny"></a>
-        <a href="#el-maraton"><img src="imagenes/el-maraton.jpg" width="200px" height="200px" alt="el maraton"></a>
-        <a href="#kurma"><img src="imagenes/kurma.jpg" width="200px" height="200px" alt="kurma"></a>
-        <a href="#por-que"><img src="imagenes/por-que.jpg" width="200px" height="200px" alt="por que"></a>
+        <a href="#afiche-pelicula"><img src="imagenes/afiche-pelicula.jpg" width="200px" height="200px" alt="Perro que no calla" onClick="mostrarGaleria()"></a>
+        <a href="#afiche-urge"><img src="imagenes/afiche-urge.jpg" width="200px" height="200px" alt="Urge" onClick="mostrarGaleria()"></a>
+        <a href="#obey"><img src="imagenes/obey.jpg" width="200px" height="200px" alt="obey" onClick="mostrarGaleria()"></a>
+        <a href="#mano"><img src="imagenes/mano.jpg" width="200px" height="200px" alt="afiche social mano" onClick="mostrarGaleria()"></a>
+        <a href="#bad-bunny"><img src="imagenes/bad-bunny.jpg" width="200px" height="200px" alt="bad bunny" onClick="mostrarGaleria()"></a>
+        <a href="#el-maraton"><img src="imagenes/el-maraton.jpg" width="200px" height="200px" alt="el maraton" onClick="mostrarGaleria()"></a>
+        <a href="#kurma"><img src="imagenes/kurma.jpg" width="200px" height="200px" alt="kurma" onClick="mostrarGaleria()"></a>
+        <a href="#por-que"><img src="imagenes/por-que.jpg" width="200px" height="200px" alt="por que" onClick="mostrarGaleria()"></a>
     </section>
 
     <section id="galeria">
 		<ul id="galeria-oculta">
 				<li class="fraccion-galeria" id="afiche-pelicula">
 						<a href="#" class="primer-ultima-flecha"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></a>
-						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px">
+						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 						<a href="#afiche-urge"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
                 
 				<li class="fraccion-galeria" id="afiche-urge">
-						<a href="#afiche-pelicula"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></
-						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px">
+						<a href="#afiche-pelicula"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></a>
+						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 						<a href="#obey"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 
 				<li class="fraccion-galeria" id="obey">
 						<a href="#afiche-urge"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></a>
-						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px">
-						<a href="#mano" class="primer-ultima-flecha"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
+						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						<a href="#mano"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 
 				<li class="fraccion-galeria" id="mano">
 						<a href="#obey"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></a>
-						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px">
+						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 						<a href="#bad-bunny"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 
 				<li class="fraccion-galeria" id="bad-bunny">
-						<a href="#mano"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></
-						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px">
-						<a href="#el.maraton"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
+						<a href="#mano"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></a>
+						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						<a href="#el-maraton"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 
 				<li class="fraccion-galeria" id="el-maraton">
 						<a href="#bad-bunny"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></a>
-						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px">
-						<a href="#kurma" class="primer-ultima-flecha"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
+						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+						<a href="#kurma"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 
                 <li class="fraccion-galeria" id="kurma">
 						<a href="#por-que"><img src="imagenes/flecha-atras.png" width="50px" height="50px" alt="Anterior"></a>
-						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px">
+						<img class="close" src="imagenes/x.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
 						<a href="#" class="primer-ultima-flecha"><img src="imagenes/flecha-adelante.png" width="50px" height="50px" alt="Siguiente"></a>
 				</li>
 		</ul>
