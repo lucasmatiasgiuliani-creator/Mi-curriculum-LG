@@ -122,5 +122,25 @@
     </div>
 </footer>
 
+ <!-- SCRIPT: activa animaciones al hacer scroll -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elementosAnimados = document.querySelectorAll(".roles span, .especialidades ul li");
+
+      const observer = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+          if (entrada.isIntersecting) {
+            entrada.target.style.animationPlayState = "running";
+          }
+        });
+      }, { threshold: 0.3 });
+
+      elementosAnimados.forEach((el) => {
+        el.style.animationPlayState = "paused";
+        observer.observe(el);
+      });
+    });
+  </script>
+
     </body>
 </html>
