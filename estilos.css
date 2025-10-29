@@ -398,44 +398,123 @@ input[type="submit"]:hover {
 }
 
 /*-----------------------------------*/
+/* GENERAL FIX PARA RESPONSIVE */
+/*-----------------------------------*/
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* evita el scroll horizontal */
+}
+
+/* Asegura que imágenes y videos no se desborden */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*-----------------------------------*/
 /* RESPONSIVE */
 /*-----------------------------------*/
+@media (max-width: 1024px) {
+  main { padding: 2rem 1rem; }
+  .intro h1 { font-size: 2.5rem; }
+}
+
 @media (max-width: 768px) {
   main { padding: 2rem 1rem; }
 
   .intro h1 { font-size: 2.2rem; }
 
-  .trabajo { flex-direction: column; }
+  .trabajo { flex-direction: column; align-items: center; }
 
   .grid-imagenes {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   /* HEADER RESPONSIVE */
+  .header {
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .nav ul {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-  }
-
-  .header {
-    padding: 1.5rem 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .grid-imagenes {
     grid-template-columns: 1fr;
+    gap: 0.8rem;
   }
 
-  .intro .apellido { font-size: 5rem; }
+  .intro .apellido { font-size: 4.5rem; }
 
-  .roles { flex-wrap: wrap; gap: 1rem; }
+  .roles {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
 
   /* HEADER RESPONSIVE PARA MÓVILES */
+  .header { padding: 1rem; }
+
   .nav ul { gap: 0.8rem; }
 
   .nav a { font-size: 0.9rem; }
 
-  .header { padding: 1rem; }
+  /* Ajuste extra: evita que algo sobresalga */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/*-----------------------------------*/
+/* RESPONSIVE Afiche de película */
+/*-----------------------------------*/
+@media (max-width: 768px) {
+  .afiche-pelicula {
+    flex-direction: column;
+    text-align: left;
+    padding: 1.5rem;
+  }
+
+  .afiche-pelicula img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .afiche-texto {
+    max-width: 100%;
+  }
+
+  .afiche-texto h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .afiche-pelicula {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .afiche-pelicula img {
+    max-width: 90%;
+  }
+
+  .afiche-texto h1 {
+    font-size: 1.6rem;
+  }
+
+  .afiche-texto p {
+    font-size: 0.95rem;
+  }
 }
